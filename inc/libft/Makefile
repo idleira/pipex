@@ -6,7 +6,7 @@
 #    By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/19 15:16:37 by ibeliaie          #+#    #+#              #
-#    Updated: 2023/09/14 11:38:05 by ibeliaie         ###   ########.fr        #
+#    Updated: 2023/09/15 20:08:34 by ibeliaie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,6 @@ SRC =	ft_atoi.c       \
 		ft_itoa.c       \
 		ft_split.c      \
 		ft_bzero.c      \
-		ft_splits.c		\
 		ft_calloc.c     \
 		ft_memset.c     \
 		ft_memchr.c     \
