@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:04:27 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/13 20:25:48 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/09/15 17:45:48 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,22 +51,21 @@ typedef struct s_pipex
 
 int		get_next_line(char **line);
 void	main_cycle(t_pipex pipex, char *argv[], char *envp[]);
-//  childs.c
+
 void	child(t_pipex pipex, char *argv[], char *envp[]);
-//  free.c
+
 void	close_pipes(t_pipex *pipex);
 void	parent_free(t_pipex *pipex);
 void	child_free(t_pipex *pipex);
 void	pipe_free(t_pipex *pipex);
-//  error.c
+
 void	msg_pipe(char *arg);
 void	msg_self(char *err);
 void	msg_perr(char *err);
-//  functions
+
 char	*find_path(char **envp);
 void	get_infile(char **argv, t_pipex *pipex);
 void	get_outfile(char *argv, t_pipex *pipex);
-//  here_doc.c
 int		args_in(char *arg, t_pipex *pipex);
 void	here_doc(char *argv);
 
