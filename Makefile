@@ -5,7 +5,7 @@ BLUE = \033[0;94;1m
 DEF_COLOR = \033[0;37m
 
 NAME        = pipex
-NAME_BONUS  = ./bonus/pipex_bonus
+NAME_BONUS  = pipex_bonus
 LIBFT_DIR   = ./inc/libft/
 LIBFT_NAME  = $(LIBFT_DIR)libft.a
 GNL_DIR		= ./inc/gnl/
@@ -42,7 +42,7 @@ $(NAME): $(OBJ_MAIN) $(LIBFT_NAME) $(GNL_NAME) $(HDR)
 	@$(RM) $(OBJ_BONUS)
 	@$(CC) $(OBJ_MAIN) $(LIBFT_NAME) $(GNL_NAME) -o $(NAME)
 	@echo "$(DEF_COLOR)   	  ( \   / ) \n \
-		$(DEF_COLOR)  (˶ ˘ ᵕ ˘ )    💬 $(PINK)" pipex compiled successfully ☆" \n \
+		$(DEF_COLOR)  ( ･ ⌵ ･ )    💬 $(PINK)" pipex compiled successfully ☆" \n \
 		$(DEF_COLOR) c( っ    っ\n $(DEF_COLOR)"
 
 $(NAME_BONUS): $(OBJ_BONUS) $(LIBFT_NAME) $(GNL_NAME) $(HDR)
@@ -50,7 +50,7 @@ $(NAME_BONUS): $(OBJ_BONUS) $(LIBFT_NAME) $(GNL_NAME) $(HDR)
 	@$(CC) $(OBJ_BONUS) $(LIBFT_NAME) $(GNL_NAME) -o $(NAME_BONUS)
 	@touch $(NAME_BONUS)
 		@echo "$(DEF_COLOR)   	  ( \   / ) \n \
-		$(DEF_COLOR)  (˶ ˘ ᵕ ˘ )    💬 $(BLUE)" pipex+ compiled successfully ☆" \n \
+		$(DEF_COLOR)  ( ･ ◡ ･ )    💬 $(BLUE)" pipex+ compiled successfully ☆" \n \
 		$(DEF_COLOR) c( っ    っ\n $(DEF_COLOR)"
 
 
@@ -62,15 +62,19 @@ clean:
 	@$(RM) $(OBJ_BONUS)
 	@make clean $(NOPR) $(LIBFT_DIR)
 	@make clean $(NOPR) $(GNL_DIR)
-	@echo "$(YELLOW)			💬 " object files removed ☆"  $(DEF_COLOR)"
+		@echo "$(DEF_COLOR)   	  ( \   / ) \n \
+		$(DEF_COLOR)  ( ･ o ･ )    💬 $(YELLOW)"  object files removed ☆ " \n \
+		$(DEF_COLOR) c( っ    っ\n $(DEF_COLOR)"
 
 fclean: clean
 	@$(RM) $(NAME)
 	@$(RM) $(NAME_BONUS)
-	clear
 	@make fclean $(NOPR) $(LIBFT_DIR)
 	@make fclean $(NOPR) $(GNL_DIR)
-	@echo "$(GREEN)			💬 " everything cleaned ☆" $(DEF_COLOR)"
+	clear
+		@echo "$(DEF_COLOR)   	  ( \   / ) \n \
+		$(DEF_COLOR)  ( ･ □ ･ )    💬 $(GREEN)"  everything cleaned ☆ " \n \
+		$(DEF_COLOR) c( っ    っ\n $(DEF_COLOR)"
 
 re: fclean all
 
