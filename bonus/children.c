@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:07:03 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/13 20:30:03 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/09/19 21:41:35 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,33 @@ static char	*get_cmd(char **paths, char *cmd)
 	return (NULL);
 }
 
+char	**cmd_split(char *cmd)
+{
+	int		i;
+	int		j;
+
+	i = 0;
+	while (cmd[i])
+	{
+		if (cmd[i] == '\'' || cmd[i] == '\"')
+		{
+			j = i + 1;
+			while (cmd[j] != cmd[i] && cmd[j])
+				j++;
+			if (cmd[j])
+			{
+				cmd[i] = 26;
+				cmd[j] = 26;
+				i = j;
+			}
+		}
+		else if (cmd[i] == ' ')
+			cmd[i] = 26;
+		i++;
+	}
+	return (ft_split(cmd, 26));
+}
+
 void	child(t_pipex pipex, char *argv[], char *envp[])
 {
 	if (pipex.count > 0)
@@ -48,7 +75,7 @@ void	child(t_pipex pipex, char *argv[], char *envp[])
 		dup2(pipex.tube[pipex.count % 2][1], STDOUT_FILENO);
 		close(pipex.tube[pipex.count % 2][0]);
 	}
-	pipex.cmd_args = ft_split(argv[pipex.count + 2 + pipex.here_doc], ' ');
+	pipex.cmd_args = cmd_split(argv[pipex.count + 2 + pipex.here_doc]);
 	pipex.cmd = get_cmd(pipex.cmd_paths, pipex.cmd_args[0]);
 	if (!pipex.cmd)
 	{
