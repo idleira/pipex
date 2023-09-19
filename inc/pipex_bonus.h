@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:04:27 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/15 17:45:48 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/09/19 22:07:27 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,7 @@ void	get_infile(char **argv, t_pipex *pipex);
 void	get_outfile(char *argv, t_pipex *pipex);
 int		args_in(char *arg, t_pipex *pipex);
 void	here_doc(char *argv);
+
+char	**cmd_split(char *cmd);
 
 #endif

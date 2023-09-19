@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:03:54 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/13 20:26:46 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/09/19 22:07:19 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void	msg_pipe(char *arg);
 void	msg_self(char *err);
 void	msg_perr(char *err);
 
+char	**cmd_split(char *cmd);
 char	*find_path(char **envp);
 
 #endif
