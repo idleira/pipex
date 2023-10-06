@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:03:54 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/19 22:07:19 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/06 19:15:32 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@
 # include <string.h>
 # include <stdio.h>
 
-# define ERR_INFILE "Infile"
-# define ERR_OUTFILE "Outfile"
-# define ERR_CMD "Command not found: "
-# define ERR_PIPE "Pipe"
-# define ERR_ENVP "Environment error"
-# define ERR_INPUT "Invalid number of arguments"
+# define ERR_INFILE "Error: Missing or invalid input file."
+# define ERR_OUTFILE "Error: Missing or invalid output file."
+# define ERR_CMD "Error: Command not found: "
+# define ERR_PIPE "Error: Pipe creation failed."
+# define ERR_ENVP "Error: Environment setup failed."
+# define ERR_INPUT "Error: Invalid number of arguments."
 
 typedef struct s_pipex
 {
