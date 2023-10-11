@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:07:03 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/19 21:41:20 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/06 20:49:18 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,9 +70,11 @@ void	first_child(t_pipex pipex, char *argv[], char *envp[])
 	{
 		msg_pipe(pipex.cmd_args[0]);
 		child_free(&pipex);
-		exit(1);
+		exit(127);
 	}
-	execve(pipex.cmd, pipex.cmd_args, envp);
+	if (execve(pipex.cmd, pipex.cmd_args, envp) == -1)
+		exit(1);
+	exit (0);
 }
 
 void	second_child(t_pipex pipex, char *argv[], char *envp[])
@@ -86,7 +88,9 @@ void	second_child(t_pipex pipex, char *argv[], char *envp[])
 	{
 		msg_pipe(pipex.cmd_args[0]);
 		child_free(&pipex);
-		exit(1);
+		exit(127);
 	}
-	execve(pipex.cmd, pipex.cmd_args, envp);
+	if (execve(pipex.cmd, pipex.cmd_args, envp) == -1)
+		exit(1);
+	exit (0);
 }

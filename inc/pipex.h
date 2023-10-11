@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:03:54 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/10/06 19:15:32 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/06 20:32:34 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ void	second_child(t_pipex pipex, char *argv[], char *envp[]);
 
 void	parent_free(t_pipex *pipex);
 void	child_free(t_pipex *pipex);
+int		parent2(t_pipex *pipex);
 
 void	msg_pipe(char *arg);
 void	msg_self(char *err);
