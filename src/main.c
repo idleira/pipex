@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 13:43:17 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/10/06 20:52:47 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:36:05 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,5 @@ int	main(int argc, char *argv[], char *envp[])
 	close_pipes(&pipex);
 	error_code = parent2(&pipex);
 	parent_free(&pipex);
-    exit(error_code);
+	exit(error_code);
 }

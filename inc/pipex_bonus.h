@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:04:27 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/10/06 19:16:49 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:35:30 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@
 # define ERR_ENVP "Error: Environment setup failed."
 # define ERR_INPUT "Error: Invalid number of arguments."
 # define ERR_HEREDOC "Error: Invalid use of here document."
-
 
 typedef struct s_pipex
 {
