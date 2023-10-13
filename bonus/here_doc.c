@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex_bonus.h"
+#include "../inc/pipex_bonus.h"
 
 int	args_in(char *arg, t_pipex *pipex)
 {

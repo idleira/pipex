@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex_bonus.h"
+#include "../inc/pipex_bonus.h"
 
 void	close_pipes(t_pipex *pipex)
 {

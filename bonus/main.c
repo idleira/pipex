@@ -6,11 +6,11 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 13:43:17 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/13 20:24:31 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/13 17:05:36 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex_bonus.h"
+#include "../inc/pipex_bonus.h"
 
 void	main_cycle(t_pipex pipex, char *argv[], char *envp[])
 {

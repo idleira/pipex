@@ -6,11 +6,11 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 13:43:11 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/13 20:21:03 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:34:15 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex_bonus.h"
+#include "../inc/pipex_bonus.h"
 
 void	msg_self(char *err)
 {

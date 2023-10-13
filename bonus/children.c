@@ -6,11 +6,11 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:07:03 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/09/19 21:41:35 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/13 17:05:33 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex_bonus.h"
+#include "../inc/pipex_bonus.h"
 
 static char	*get_cmd(char **paths, char *cmd)
 {
