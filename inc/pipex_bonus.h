@@ -6,14 +6,14 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:04:27 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/10/11 15:35:30 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:19:42 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PIPEX_BONUS_H
 # define PIPEX_BONUS_H
 
-# include "../libft/libft.h"
+# include "libft/libft.h"
 # include <unistd.h>
 # include <sys/types.h>
 # include <sys/uio.h>
@@ -30,6 +30,7 @@
 # define ERR_ENVP "Error: Environment setup failed."
 # define ERR_INPUT "Error: Invalid number of arguments."
 # define ERR_HEREDOC "Error: Invalid use of here document."
+# define ERR_EXECVE "Error: Execution of command failed."
 
 typedef struct s_pipex
 {
