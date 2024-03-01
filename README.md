@@ -10,15 +10,15 @@ the result copiesthe output of this shell command: `$ < input_file command1 | co
 
 ## 
 
-here are some **resources** that helped me:
-
-• [pipex tutorial](https://csnotes.medium.com/pipex-tutorial-42-project-4469f5dd5901)
+here are some **resources** i used:
 
 • [creating and killing child processes in c](https://www.codequoi.com/en/creating-and-killing-child-processes-in-c/)
 
-• [a comprehensive guide to pipex](https://reactive.so/post/42-a-comprehensive-guide-to-pipex)
-
 • [pipe: an inter-process communication method](https://www.codequoi.com/en/pipe-an-inter-process-communication-method/)
+
+• [handling a file by its descriptor in c](https://www.codequoi.com/en/handling-a-file-by-its-descriptor-in-c/)
+
+• [a comprehensive guide to pipex](https://reactive.so/post/42-a-comprehensive-guide-to-pipex)
 
 ## 
 
