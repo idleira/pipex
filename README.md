@@ -1,12 +1,16 @@
 # pipex - @42Wolfsburg
 ## description
 pipex takes the project aimed to better understand shell redirection and pipes, by handling them in C.
+
 the program takes an input file, performs a command on it, pipes the result to another command which then writes its result to an output file.
+
 program's arguments are processed the same as < infile cmd1 | cmd2 > outfile in shell.
 
 the result copiesthe output of this shell command: `$ < input_file command1 | command2 > output file`
 
-here are some **sources** that helped me:
+## 
+
+here are some **resources** that helped me:
 
 • [pipex tutorial](https://csnotes.medium.com/pipex-tutorial-42-project-4469f5dd5901)
 
@@ -15,6 +19,8 @@ here are some **sources** that helped me:
 • [a comprehensive guide to pipex](https://reactive.so/post/42-a-comprehensive-guide-to-pipex)
 
 • [pipe: an inter-process communication method](https://www.codequoi.com/en/pipe-an-inter-process-communication-method/)
+
+## 
 
 ```
 # ./pipex infile cmd1 cmd2 outfile
